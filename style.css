@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Poppins:wght@400;500;600&family=Raleway:wght@400;500;600;700&display=swap');
+
+:root{
+    --paymary-color:#9a5fa3;
+    --black--text:#333333
+}
+
+
+*{
+    padding: 0;
+    margin: 0
+}
+
+body{
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+
+.specialist{
+    background-color: #ffffff;
+}
+
+.specialist__container{
+    max-width: 1500px;
+    margin: auto;
+    padding: 100px 0px;
+}
+
+.specialist__heading{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.specialist__heading h1{
+   color: var(--paymary-color);
+   font-size: 43px;
+   font-weight: 700;
+   line-height: 40px;
+   margin-bottom: 55px; 
+}
+
+.specialist__category{
+    display: flex;
+    flex-direction: column;
+}
+
+.specialist__branchOf__medicine{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 3px solid var(--paymary-color);
+    border-bottom: 1px solid var(--paymary-color);
+    padding: 12px 0px;
+}
+
+.branchOf__medicine__title{
+    line-height: 1.5em;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 35px;
+    color: var(--black--text);
+}
+
+.branchOf__medicine__close{
+    width: 22px;
+    height: 22px;
+    cursor: pointer;
+}
+
+.branchOf__medicine__description{
+    padding: 12px 0px;
+    font-size: 19px;
+    font-weight: 500;
+    line-height: 28px; 
+    color: var(--black--text);
+}
+.branchOf__medicine__description P{
+    padding-bottom: 40px;
+}
+
+.collups__branchof__medicine{
+    color: var(--paymary-color);
+}
+
+.specialist__doctor__list{
+    padding: 40px 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.specialist__doctor__container{
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.specialist__doctor__details{
+    display: flex;
+    align-items: center;
+    padding-left: 6px;
+}
+
+.specialist__doctor__name{
+    color: var(--paymary-color);
+    font-size: 43px;
+    font-weight: 700;
+    line-height: 60px;
+}
+
+.specialist__doctor__department{
+    color: var(--paymary-color);
+    font-size: 33px;
+    font-weight: 600;
+    line-height: 52px;
+}
+
+.specialist__doctor__bio{
+    font-size: 18px;
+    font-weight: 500;
+    margin: 15px 0px 0px 0px;
+    color: var(--black--text);
+}
+
+.specialist__doctor__bio p{
+    line-height: 40px;
+}
+
+/*===== specialist doctor button start =====  */
+
+.specialist__doctor__btn{
+    cursor: pointer;
+    margin-top: 30px;
+    width: fit-content;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+    background-color: var(--paymary-color);
+    padding: 14px 34px;
+    border-radius: 100px;
+    position: relative; 
+    color: #FFFFFF;
+}
+
+.specialist__doctor__btn h6{
+    font-weight: 600;
+    line-height: 1.25em;
+    letter-spacing: .5px;
+    font-size: 14px;
+
+}
+
+.specialist__doctor__btn:after {
+    content: '➔';
+    position: absolute;
+    opacity: 0;  
+    top: 11px;
+    right: 23px;
+    transition: 0.5s;
+  }
+
+ .specialist__doctor__btn:hover{
+    padding-right: 34px;
+    padding-left:25px;
+    box-shadow: 1px 5px 4px 1px rgb(197, 197, 197);
+
+  }
+  
+  .specialist__doctor__btn:hover:after {
+    opacity: 1;
+    right: 10px;
+  } 
+
+/*===== specialist doctor button end  ===== */
+
+
+  .specialist__doctor__image img{
+    width: 100%;
+  }
+  
+  .radiology__branch{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 3px solid var(--paymary-color);
+    border-bottom: 1px solid var(--paymary-color);
+    padding:11px 0px ;
+  }
+
+  .radiology__branch__desctiption{
+    padding-top: 10px;
+    padding-bottom: 35px;
+    border-bottom: 1px solid var(--paymary-color);
+    font-size: 19px;
+    font-weight: 500;
+    line-height: 28px; 
+    color: var(--black--text);
+
+  }
+
+
+  @media screen and (max-width: 767px) {
+
+    .specialist__container{
+        max-width: 100%;
+        padding: 70px 10px;
+    }
+    .specialist__heading h1{
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 1.2em;
+        margin-bottom: 30px; 
+     }
+     .specialist__branchOf__medicine{
+        padding: 8px 0px;
+    }
+
+    .branchOf__medicine__title{
+        font-weight: 500;
+        font-size: 23px;
+        line-height: 1.7em;
+        
+    }
+    .branchOf__medicine__description{
+        padding: 8px 0px;
+        font-weight: 500;
+        line-height: 28px;
+        font-size: 16px;
+    }
+    .branchOf__medicine__description P{
+        padding-bottom: 20px;
+    }
+
+    .specialist__doctor__list :nth-child(1){
+        flex-direction: column-reverse;
+    }
+    .specialist__doctor__list :nth-child(2){
+     flex-direction: column;
+    }
+    .specialist__doctor__list :nth-child(3){
+      flex-direction: column-reverse;
+    }
+
+    .specialist__doctor__details__container{
+        text-align: center;
+
+    }
+
+    .specialist__doctor__name{
+        font-size: 26px;
+        line-height: 1.2em;
+        margin-bottom: 10px;
+    }
+    .specialist__doctor__department{
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 1.2em;
+    }
+
+    .specialist__doctor__bio{
+        font-weight: 500;
+        font-size: 16px;
+    }
+
+    .specialist__doctor__bio p{
+        line-height: 33px;
+    }
+
+    .specialist__doctor__image {
+       display: flex;
+       align-items:center;
+       justify-content: center;
+      }
+    .specialist__doctor__image img{
+       width: 70%;
+    }
+
+     .radiology__branch__desctiption{
+        padding: 18px 0px;
+        font-weight: 500;
+        line-height: 28px;
+        font-size: 16px;
+     }
+  }
